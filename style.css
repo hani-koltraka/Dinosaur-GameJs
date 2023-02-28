@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.game {
+  width: 100%;
+  height: 400px;
+
+  margin-top: 200px;
+}
+
+#dinosaur {
+  height: 62px;
+  width: 56px;
+  position: relative;
+  top: 320px;
+  left: 120px;
+  margin-left: 12px;
+}
+.dinosaurImg {
+  height: 100px;
+  width: 100px;
+}
+.jump {
+  animation: jump 0.9s linear;
+}
+@keyframes jump {
+  0% {
+    top: 320px;
+  }
+
+  50% {
+    top: 30px;
+  }
+  80% {
+    top: 200px;
+  }
+  100% {
+    top: 320px;
+  }
+}
+
+#cactus {
+  width: 40px;
+  height: 50px;
+  position: relative;
+  top: 190px;
+  left: 660px;
+
+  animation: blockOfGameMovement 2s linear infinite;
+}
+.cactusImg {
+  height: 170px;
+  width: 150px;
+}
+.floor {
+  background-color: grey;
+  height: 5px;
+  width: 100%;
+  margin-top: 310px;
+}
+
+@keyframes blockOfGameMovement {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
